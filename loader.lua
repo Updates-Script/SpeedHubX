@@ -1,7 +1,7 @@
 local StarterGui = game:GetService("StarterGui")
 
 -- Config
-local SPEEDHUB_URL = "https://rawscripts.net/raw/Universal-Script-Speed-Hub-X-27904"
+local SPEEDHUB_URL = "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"
 local SECOND_SCRIPT_URL = "https://raw.githubusercontent.com/Updates-Script/Updated/refs/heads/main/Script.lua"
 
 -- List of keywords/phrases that likely indicate detection logic (lines containing them will be removed)
